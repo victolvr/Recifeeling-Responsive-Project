@@ -34,8 +34,8 @@ html, body {
 
 .google-button, .button {
     display: flex;
-    max-width: 225px; /* Largura máxima igual para ambos */
-    padding: 0.8rem 1.4rem; /* Padding igual para ambos */
+    max-width: 225px;
+    padding: 0.8rem 1.4rem;
     font-size: 0.700rem;
     font-weight: 700;
     text-align: center;
@@ -59,7 +59,7 @@ html, body {
 }
 
 .google-button svg {
-    height: 24px; /* Tamanho do ícone do Google */
+    height: 24px;
 }
 
 .button {
@@ -73,7 +73,7 @@ html, body {
 }
 
 .button svg {
-    height: 24px; /* Tamanho do ícone do LinkedIn igual ao do Google */
+    height: 24px;
 }
 .separator {
     display: flex;
@@ -164,11 +164,11 @@ html, body {
 }
 
 .form-check {
-    margin-bottom: 1rem; /* Adiciona margem inferior para espaçamento */
+    margin-bottom: 1rem;
 }
 
 .btn-primary {
-    width: 100%; /* Faz o botão ocupar toda a largura */
+    width: 100%;
 }
 
 @media (max-width: 768px) {
