@@ -34,18 +34,18 @@ html, body {
 
 .google-button, .button {
     display: flex;
-    max-width: 225px;
-    padding: 0.8rem 1.4rem; /* Padding igual para ambos */
+    flex: 1;
+    padding: 0.8rem 1rem;
     font-size: 0.700rem;
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
     align-items: center;
+    justify-content: center;
     border-radius: 0.5rem;
     gap: 0.75rem;
     cursor: pointer;
-    transition: all 0.6s ease;
-    width: 100%;
+    transition: all 0.3s ease;
 }
 
 .google-button {
@@ -59,7 +59,7 @@ html, body {
 }
 
 .google-button svg {
-    height: 20px; /* Tamanho do ícone do Google */
+    height: 20px;
 }
 
 .button {
@@ -69,11 +69,11 @@ html, body {
 }
 
 .button:hover {
-    box-shadow: none;
+    opacity: 0.9;
 }
 
 .button svg {
-    height: 20px; /* Tamanho do ícone do LinkedIn igual ao do Google */
+    height: 20px;
 }
 
 .separator {
