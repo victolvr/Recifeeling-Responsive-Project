@@ -32,9 +32,9 @@ html, body {
     margin-bottom: 1.5rem;
 }
 
-.google-button {
-    max-width: 225px;
+.google-button, .button {
     display: flex;
+    max-width: 225px;
     padding: 0.8rem 1.4rem;
     font-size: 0.700rem;
     font-weight: 700;
@@ -42,49 +42,39 @@ html, body {
     text-transform: uppercase;
     align-items: center;
     border-radius: 0.5rem;
-    border: 1px solid rgba(0, 0, 0, 0.25);
     gap: 0.75rem;
+    cursor: pointer;
+    transition: all 0.6s ease;
+    width: 100%;
+    height: 48px;
+}
+
+.google-button {
+    border: 1px solid rgba(0, 0, 0, 0.25);
     color: rgb(65, 63, 63);
     background-color: #fff;
-    cursor: pointer;
-    transition: all .6s ease;
-    width: 100%;
+}
+
+.google-button:hover {
+    transform: scale(1.02);
 }
 
 .google-button svg {
     height: 24px;
 }
 
-.google-button:hover {
-    trans: scale(1.02);
-}
-
 .button {
-    display: flex;
-    max-width: 225px;
     background-color: #0A66C2;
     color: #ffffff;
-    padding: 0.6rem 1.4rem;
-    font-size: 0.700rem;
-    line-height: 1.25rem;
-    font-weight: 700;
-    text-align: center;
-    vertical-align: middle;
-    align-items: center;
-    border-radius: 0.5rem;
-    gap: 0.75rem;
     border: none;
-    cursor: pointer;
-    transition: all .6s ease;
-    width: 100%;
-}
-
-.button svg {
-    height: 30px;
 }
 
 .button:hover {
     box-shadow: none;
+}
+
+.button svg {
+    height: 24px;
 }
 
 .separator {
