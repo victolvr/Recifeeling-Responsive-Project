@@ -163,6 +163,7 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .banner-login img {
@@ -173,6 +174,8 @@ html, body {
     top: 0;
     left: 0;
     z-index: 1;
+    min-width: 100%;
+    min-height: 100%;
 }
 
 .banner-text {
