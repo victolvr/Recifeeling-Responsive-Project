@@ -96,21 +96,13 @@ html, body {
     text-transform: uppercase;
 }
 
-.login-form-wrapper {
+.form-control {
     width: 100%;
-    max-width: 400px;
-    padding: 20px;
-    background: white;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-}
-
-    width: 90%;
-    margin: 0 auto 1rem;
-    padding: 10px 15px;
+    margin-bottom: 1rem;
+    padding: 10px 15px; /* Padding menor */
     border: 2px solid #e0e0e0;
-    border-radius: 8px;
-    font-size: 0.9rem;
+    border-radius: 8px; /* Bordas menos arredondadas */
+    font-size: 0.9rem; /* Tamanho da fonte menor */
     transition: all 0.3s ease;
 }
 
@@ -121,17 +113,16 @@ html, body {
 
 /* Botão "Cadastrar" */
 .btn-primary {
-    width: 90%;
-    margin: 1rem auto 0;
-    padding: 12px 20px;
+    width: 100%;
+    padding: 12px 20px; /* Padding menor */
     border: none;
-    border-radius: 8px;
+    border-radius: 8px; /* Bordas menos arredondadas */
     background: linear-gradient(135deg, #0A66C2, #094a8c);
     color: white;
-    font-size: 0.9rem;
+    font-size: 0.9rem; /* Tamanho da fonte menor */
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.5px; /* Espaçamento entre letras menor */
     transition: all 0.3s ease;
     cursor: pointer;
 }
@@ -222,7 +213,7 @@ html, body {
     width: 100%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 700px) {
     .banner-login {
         min-height: 30vh;
     }
