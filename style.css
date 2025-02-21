@@ -14,7 +14,7 @@ html, body {
     flex-wrap: wrap;
 }
 
-.login-form {
+.login- {
     flex: 1 1 400px;
     min-height: 100vh;
     padding: 2rem;
@@ -56,7 +56,7 @@ html, body {
 }
 
 .google-button:hover {
-    transform: scale(1.02);
+    trans: scale(1.02);
 }
 
 .button {
@@ -104,16 +104,16 @@ html, body {
     color: #666;
     font-size: 0.8rem;
     padding: 0 0.5rem;
-    text-transform: uppercase;
+    text-trans: uppercase;
 }
 
-.login-form-wrapper {
+.login--wrapper {
     width: 100%;
     max-width: 450px;
     padding: 20px;
 }
 
-.form-control {
+.-control {
     width: 100%;
     margin-bottom: 1rem;
 }
@@ -167,8 +167,23 @@ html, body {
     text-shadow: 4px 4px 6px rgb(0, 0, 0);
 }
 
-.form-check {
+.-check {
     margin-bottom: 1rem;
+}
+
+.form-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.form-check {
+    margin-bottom: 0; /* Remove a margem inferior para evitar espaçamento extra */
+}
+
+.btn-primary {
+    margin: 0; /* Remove a margem do botão para evitar desalinhamento */
 }
 
 @media (max-width: 768px) {
@@ -176,7 +191,7 @@ html, body {
         min-height: 30vh;
     }
 
-    .login-form {
+    .login- {
         min-height: auto;
         padding: 4rem 2rem;
     }
