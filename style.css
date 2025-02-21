@@ -99,10 +99,10 @@ html, body {
 .form-control {
     width: 100%;
     margin-bottom: 1rem;
-    padding: 10px 15px; /* Padding menor */
+    padding: 10px 15px;
     border: 2px solid #e0e0e0;
-    border-radius: 8px; /* Bordas menos arredondadas */
-    font-size: 0.9rem; /* Tamanho da fonte menor */
+    border-radius: 8px;
+    font-size: 0.9rem;
     transition: all 0.3s ease;
 }
 
@@ -114,15 +114,15 @@ html, body {
 /* Botão "Cadastrar" */
 .btn-primary {
     width: 100%;
-    padding: 12px 20px; /* Padding menor */
+    padding: 12px 20px;
     border: none;
-    border-radius: 8px; /* Bordas menos arredondadas */
+    border-radius: 8px;
     background: linear-gradient(135deg, #0A66C2, #094a8c);
     color: white;
-    font-size: 0.9rem; /* Tamanho da fonte menor */
+    font-size: 0.9rem;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 0.5px; /* Espaçamento entre letras menor */
+    letter-spacing: 0.5px;
     transition: all 0.3s ease;
     cursor: pointer;
 }
@@ -155,8 +155,8 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden; /* Garante que a imagem não ultrapasse as bordas */
-    width: 100%; /* Ocupa 100% da largura */
+    overflow: hidden;
+    width: 100%;
 }
 
 .banner-login img {
