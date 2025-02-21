@@ -160,18 +160,15 @@ html, body {
 }
 
 .form-footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     margin-top: 1rem;
 }
 
 .form-check {
-    margin-bottom: 0; /* Remove a margem inferior para evitar espaçamento extra */
+    margin-bottom: 1rem; /* Adiciona margem inferior para espaçamento */
 }
 
 .btn-primary {
-    margin: 0; /* Remove a margem do botão para evitar desalinhamento */
+    width: 100%; /* Faz o botão ocupar toda a largura */
 }
 
 @media (max-width: 768px) {
