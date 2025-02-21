@@ -95,13 +95,21 @@ html, body {
     text-transform: uppercase;
 }
 
+.login-form-wrapper {
+    width: 100%;
+    max-width: 450px;
+    padding: 40px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
 .form-control {
     width: 100%;
-    margin-bottom: 1rem;
-    padding: 10px 15px;
+    margin-bottom: 1.5rem;
+    padding: 12px 20px;
     border: 2px solid #e0e0e0;
-    border-radius: 8px;
-    font-size: 0.9rem;
+    border-radius: 10px;
     transition: all 0.3s ease;
 }
 
@@ -110,19 +118,20 @@ html, body {
     box-shadow: 0 0 0 3px rgba(10,102,194,0.1);
 }
 
-/* Botão "Cadastrar" */
 .btn-primary {
     width: 100%;
-    padding: 12px 20px;
+    padding: 15px 30px;
     border: none;
-    border-radius: 8px;
+    border-radius: 50px;
     background: linear-gradient(135deg, #0A66C2, #094a8c);
     color: white;
-    font-size: 0.9rem;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
+    letter-spacing: 1px;
     transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
 }
 
 .btn-primary:hover {
