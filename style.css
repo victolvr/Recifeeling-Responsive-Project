@@ -12,6 +12,7 @@ html, body {
     min-height: 100vh;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row-reverse;
 }
 
 .login-form {
@@ -147,27 +148,27 @@ html, body {
 }
 
 .banner-login {
-    flex: 1 1 600px;
-    min-height: 50vh;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
     width: 100%;
+    flex: 1 1 60%;
+    min-height: 100vh;
 }
 
 .banner-login img {
-    width: 100vw;
     height: 100%;
     object-fit: cover;
     position: absolute;
     top: 0;
-    left: 50%;
-    transform: translateX(-50%);
     z-index: 1;
     min-width: 100%;
     min-height: 100%;
+    left: 0;
+    transform: none;
+    width: 100%;
 }
 
 .banner-text {
@@ -213,11 +214,10 @@ html, body {
 
 @media (max-width: 700px) {
     .banner-login {
-        min-height: 30vh;
+        min-height: 40vh;
+        order: -1;
     }
-
     .login-form {
-        min-height: auto;
-        padding: 4rem 2rem;
+        min-height: 60vh;
     }
 }
