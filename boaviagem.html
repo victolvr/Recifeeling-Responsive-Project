@@ -1,52 +1,118 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praia de Boa Viagem - Recife</title>
     <link rel="stylesheet" href="boaviagem.css">
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Lobster&family=Bungee+Inline&family=Philosopher&family=Abril+Fatface&display=swap" rel="stylesheet">
-    <title>Boa Viagem</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Lobster&family=Philosopher&family=Abril+Fatface&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <section class="boa-viagem">
-        <div class="boa-viagem-container">
-            <div class="boa-viagem-hero">
-                <img src="images/praiabv.jpeg" alt="Praia de Boa Viagem">
-                <div class="hero-overlay">
-                    <h2>Praia de Boa Viagem</h2>
-                    <p>O cartão postal de Recife</p>
-                </div>
-            </div>
-    
-            <div class="boa-viagem-details">
-                <div class="detail-item">
-                    <i class="fas fa-umbrella-beach"></i>
-                    <h3>7 km de extensão</h3>
-                    <p>Uma das maiores praias urbanas do Brasil.</p>
-                </div>
-                <div class="detail-item">
-                    <i class="fas fa-water"></i>
-                    <h3>Águas mornas</h3>
-                    <p>Há segurança de banho em certas áreas.</p>
-                </div>
-                <div class="detail-item">
-                    <i class="fas fa-tree"></i>
-                    <h3>Coqueirais</h3>
-                    <p>Sombra natural para descansar.</p>
-                </div>
-            </div>
-    
-            <div class="boa-viagem-cta">
-                <a href="#" class="btn-explore">
-                    <i class="fas fa-map-marked-alt"></i>
-                    Explorar no mapa
-                </a>
-                <a href="#" class="btn-photos">
-                    <i class="fas fa-camera"></i>
-                    Ver fotos
-                </a>
-            </div>
+    <header class="page-header">
+        <div class="header-content">
+            <a href="dashboard.html" class="back-button">
+                <i class="fas fa-arrow-left"></i> Voltar
+            </a>
+            <h1>Praia de Boa Viagem</h1>
+            <p>O cartão postal mais famoso do Recife</p>
         </div>
-    </section>
+        <div class="header-gradient"></div>
+        <img src="images/praiabv-wide.jpeg" alt="Vista panorâmica da Praia de Boa Viagem" class="header-image">
+    </header>
+
+    <main class="page-main">
+        <section class="highlights">
+            <div class="highlight-card">
+                <i class="fas fa-umbrella-beach"></i>
+                <h3>7km de Orla</h3>
+                <p>Perfeita para caminhadas e exercícios</p>
+            </div>
+            <div class="highlight-card">
+                <i class="fas fa-swimmer"></i>
+                <h3>Piscinas Naturais</h3>
+                <p>Formadas pelos recifes na maré baixa</p>
+            </div>
+            <div class="highlight-card">
+                <i class="fas fa-concierge-bell"></i>
+                <h3>Infraestrutura</h3>
+                <p>Quiosques, banheiros e segurança</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2 class="section-title">Conheça a Praia</h2>
+            <div class="two-column">
+                <div class="text-content">
+                    <p>A Praia de Boa Viagem é o principal cartão postal do Recife, estendendo-se por 7 km de orla urbanizada. Com seus recifes naturais que formam piscinas de água morna na maré baixa, é o local perfeito para:</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Banho de mar seguro</li>
+                        <li><i class="fas fa-check"></i> Caminhadas no calçadão</li>
+                        <li><i class="fas fa-check"></i> Esportes na areia</li>
+                        <li><i class="fas fa-check"></i> Pôr do sol inesquecível</li>
+                    </ul>
+                    <div class="warning-box">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <p>Atenção: Respeite as placas de alerta contra tubarões e nade apenas nas áreas protegidas pelos recifes.</p>
+                    </div>
+                </div>
+                <div class="image-content">
+                    <img src="images/boaviagem-detail.jpg" alt="Detalhes da praia" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery-section">
+            <h2 class="section-title">Galeria</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/boaviagem1.jpg" alt="Calçadão" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/boaviagem2.jpg" alt="Piscinas naturais" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/boaviagem3.jpg" alt="Pôr do sol" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <section class="location-section">
+            <div class="location-content">
+                <div class="location-info">
+                    <h2><i class="fas fa-map-marker-alt"></i> Como Chegar</h2>
+                    <p>Av. Boa Viagem, Recife - PE</p>
+                    <div class="transport-options">
+                        <div class="transport-card">
+                            <i class="fas fa-bus"></i>
+                            <h4>Ônibus</h4>
+                            <p>Linhas 024, 033 e 040</p>
+                        </div>
+                        <div class="transport-card">
+                            <i class="fas fa-taxi"></i>
+                            <h4>Táxi/Uber</h4>
+                            <p>20min do Centro</p>
+                        </div>
+                        <div class="transport-card">
+                            <i class="fas fa-car"></i>
+                            <h4>Carro</h4>
+                            <p>Estacionamento disponível</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="location-map">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.375389036251!2d-34.89925918522143!3d-8.119865194195859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1f43778f7b6d%3A0x461cafe2d5f079d1!2sPraia%20de%20Boa%20Viagem!5e0!3m2!1spt-BR!2sbr!4v1717124147517!5m2!1spt-BR!2sbr" 
+                        width="600" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
