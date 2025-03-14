@@ -25,6 +25,27 @@ html, body {
     background-color: #f9fdff;
 }
 
+.app-store-link {
+    text-align: center;
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.app-store-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    border: 2px solid #fff;
+}
+
+.app-store-icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
 .button-container {
     display: flex;
     gap: 20px;
