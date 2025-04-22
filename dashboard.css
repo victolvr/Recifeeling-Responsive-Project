@@ -22,21 +22,59 @@ header {
     text-shadow: 2px 2px 4px rgb(0, 0, 0);
 }
 
-.user-icon {
+.profile-button {
     position: absolute;
-    right: 40px;
-    top: 45px;
-    color: #fff;
-    font-size: 2.2rem;
-    z-index: 2;
+    right: 2rem;
+    top: 2rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    background: linear-gradient(135deg, #fff 0%, #e6f1ff 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
     transition: all 0.3s ease;
+    z-index: 100;
+    border: 2px solid #fff;
     text-decoration: none;
 }
 
-.user-icon:hover {
+.profile-button i {
+    color: #3098ff;
+    font-size: 1.6rem;
+    transition: transform 0.3s ease;
+}
+
+.profile-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+    background: linear-gradient(135deg, #e6f1ff 0%, #fff 100%);
+}
+
+.profile-button:hover i {
     transform: scale(1.1);
-    color: #f8f9fa;
-    cursor: pointer;
+}
+
+.profile-tooltip {
+    position: absolute;
+    top: 120%;
+    background: rgba(0,0,0,0.8);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    opacity: 0;
+    transition: all 0.3s ease;
+    pointer-events: none;
+    white-space: nowrap;
+    font-family: Arial, sans-serif;
+    text-shadow: none;
+}
+
+.profile-button:hover .profile-tooltip {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .cloud:before, .cloud2:before, .cloud3:before {
