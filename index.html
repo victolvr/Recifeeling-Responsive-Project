@@ -10,6 +10,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    <meta name="theme-color" content="#3098ff">
+    <meta name="description" content="Explore os melhores pontos turísticos do Recife com dicas locais e informações detalhadas.">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Recifeeling">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 </head>
 <body>
     <div class="login">
@@ -72,7 +80,19 @@
         window.addEventListener('pagehide', () => {
             document.documentElement.classList.add('page-transition-out');
         });
-        </script>
+        
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js')
+                    .then(registration => {
+                        console.log('Service Worker registered with scope:', registration.scope);
+                    })
+                    .catch(error => {
+                        console.error('Service Worker registration failed:', error);
+                    });
+            });
+        }
+    </script>
     <script src="script.js"></script>
 </body>
 </html>

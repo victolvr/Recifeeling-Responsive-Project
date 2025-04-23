@@ -1,0 +1,103 @@
+{
+    "name": "Recifeeling - Sinta Recife de verdade",
+    "short_name": "Recifeeling",
+    "description": "Explore os melhores pontos turísticos do Recife com dicas locais e informações detalhadas.",
+    "id": "/",
+    "start_url": "/index.html",
+    "scope": "/",
+    "display": "standalone",
+    "orientation": "portrait",
+    "theme_color": "#3098ff",
+    "background_color": "#f9fdff",
+    "lang": "pt-BR",
+    "dir": "ltr",
+    "categories": ["travel", "tourism", "lifestyle"],
+    "icons": [
+      {
+        "src": "images/icon-192x192.png",
+        "sizes": "192x192",
+        "type": "image/png",
+        "purpose": "any"
+      },
+      {
+        "src": "images/icon-512x512.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose": "any"
+      },
+      {
+        "src": "images/icon-192x192-maskable.png",
+        "sizes": "192x192",
+        "type": "image/png",
+        "purpose": "maskable"
+      },
+      {
+        "src": "images/icon-512x512-maskable.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose": "maskable"
+      }
+    ],
+    "screenshots": [
+      {
+        "src": "images/screenshot-dashboard.jpg",
+        "sizes": "1280x720",
+        "type": "image/jpeg",
+        "platform": "wide",
+        "label": "Dashboard com pontos turísticos do Recife"
+      },
+      {
+        "src": "images/screenshot-detail.jpg",
+        "sizes": "1280x720",
+        "type": "image/jpeg",
+        "platform": "wide",
+        "label": "Detalhes de um ponto turístico"
+      },
+      {
+        "src": "images/screenshot-mobile.jpg",
+        "sizes": "750x1334",
+        "type": "image/jpeg",
+        "platform": "narrow",
+        "label": "Visualização mobile do aplicativo"
+      }
+    ],
+    "shortcuts": [
+      {
+        "name": "Dashboard",
+        "url": "/dashboard.html",
+        "description": "Explore os pontos turísticos",
+        "icons": [
+          {
+            "src": "images/shortcut-dashboard.png",
+            "sizes": "96x96",
+            "type": "image/png"
+          }
+        ]
+      },
+      {
+        "name": "Perfil",
+        "url": "/profile.html",
+        "description": "Acesse seu perfil",
+        "icons": [
+          {
+            "src": "images/shortcut-profile.png",
+            "sizes": "96x96",
+            "type": "image/png"
+          }
+        ]
+      }
+    ],
+    "related_applications": [
+      {
+        "platform": "play",
+        "url": "https://play.google.com/store/apps/details?id=com.recifeeling.app",
+        "id": "com.recifeeling.app"
+      },
+      {
+        "platform": "itunes",
+        "url": "https://apps.apple.com/app/recifeeling/id123456789"
+      }
+    ],
+    "prefer_related_applications": false
+  }
+  

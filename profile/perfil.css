@@ -22,7 +22,6 @@
     line-height: 1.6;
   }
   
-  /* Header Styles */
   .profile-header {
     background-color: var(--secondary-color);
     color: #fff;
@@ -57,7 +56,6 @@
     transform: translateX(-5px);
   }
   
-  /* Cloud animations from dashboard.css */
   .cloud,
   .cloud2,
   .cloud3,
@@ -319,7 +317,6 @@
     opacity: 0.9;
   }
   
-  /* Main Content Styles */
   .profile-main {
     max-width: 1000px;
     margin: -2rem auto 3rem;
@@ -380,7 +377,6 @@
     opacity: 0.8;
   }
   
-  /* Info Card Styles */
   .info-card {
     padding: 1.5rem;
   }
@@ -415,7 +411,6 @@
     color: #666;
   }
   
-  /* Favorites Grid Styles */
   .favorites-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -462,7 +457,6 @@
     color: #666;
   }
   
-  /* History List Styles */
   .history-list {
     padding: 1.5rem;
   }
@@ -523,7 +517,6 @@
     font-size: 0.8rem;
   }
   
-  /* Preferences Styles */
   .preferences-card {
     padding: 1.5rem;
   }
@@ -544,7 +537,6 @@
     font-weight: 500;
   }
   
-  /* Toggle Switch */
   .switch {
     position: relative;
     display: inline-block;
@@ -604,7 +596,6 @@
     color: #333;
   }
   
-  /* Footer Styles */
   .profile-footer {
     text-align: center;
     padding: 2rem 0;
@@ -636,7 +627,6 @@
     color: #666;
   }
   
-  /* Responsive Styles */
   @media (max-width: 768px) {
     .profile-stats {
       gap: 1rem;

@@ -5,13 +5,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const googleButton = document.querySelector('.google-button');
     const linkedinButton = document.querySelector('.button');
 
-    // Função para validar o email
     const validateEmail = (email) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 
-    // Função para validar a senha (deve conter pelo menos uma letra e um número)
     const validatePassword = (password) => /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,20}$/.test(password);
 
-    // Função para exibir mensagens de erro
     const showError = (input, message) => {
         const errorText = input.parentElement.querySelector('.error-text') || document.createElement('div');
         errorText.className = 'error-text';
@@ -23,22 +20,18 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     };
 
-    // Função para remover mensagens de erro
     const removeError = (input) => {
         const errorText = input.parentElement.querySelector('.error-text');
         if (errorText) errorText.remove();
     };
 
-    // Limpar mensagens de erro ao digitar
     emailInput.addEventListener('input', () => removeError(emailInput));
     passwordInput.addEventListener('input', () => removeError(passwordInput));
 
-    // Validação ao clicar no botão de login
     loginButton.addEventListener('click', (e) => {
         e.preventDefault();
         let isValid = true;
 
-        // Validar email
         if (!emailInput.value.trim()) {
             showError(emailInput, 'Por favor, preencha o campo de email.');
             isValid = false;
@@ -47,7 +40,6 @@ document.addEventListener('DOMContentLoaded', function() {
             isValid = false;
         }
 
-        // Validar senha
         if (!passwordInput.value.trim()) {
             showError(passwordInput, 'Por favor, preencha o campo de senha.');
             isValid = false;
@@ -56,11 +48,9 @@ document.addEventListener('DOMContentLoaded', function() {
             isValid = false;
         }
 
-        // Redirecionar se tudo estiver válido
         if (isValid) window.location.href = 'dashboard.html';
     });
 
-    // Botões de login com Google e LinkedIn
     googleButton.addEventListener('click', (e) => {
         e.preventDefault();
         alert('Login com Google');

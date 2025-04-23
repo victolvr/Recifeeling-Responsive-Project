@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // Animação suave ao rolar para seções
     document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
       anchor.addEventListener("click", function (e) {
         e.preventDefault()
@@ -17,7 +16,6 @@ document.addEventListener("DOMContentLoaded", () => {
       })
     })
   
-    // Botões de edição
     const editButtons = document.querySelectorAll(".edit-button")
     editButtons.forEach((button) => {
       button.addEventListener("click", function () {
@@ -27,7 +25,6 @@ document.addEventListener("DOMContentLoaded", () => {
       })
     })
   
-    // Botão de editar foto
     const editPhotoButton = document.querySelector(".edit-photo")
     if (editPhotoButton) {
       editPhotoButton.addEventListener("click", () => {
@@ -35,7 +32,6 @@ document.addEventListener("DOMContentLoaded", () => {
       })
     }
   
-    // Botão de logout
     const logoutButton = document.querySelector(".logout-button")
     if (logoutButton) {
       logoutButton.addEventListener("click", () => {
@@ -45,7 +41,6 @@ document.addEventListener("DOMContentLoaded", () => {
       })
     }
   
-    // Toggle switches
     const toggleSwitches = document.querySelectorAll(".switch input")
     toggleSwitches.forEach((toggle) => {
       toggle.addEventListener("change", function () {
@@ -55,7 +50,6 @@ document.addEventListener("DOMContentLoaded", () => {
       })
     })
   
-    // Efeito de hover nos cards de favoritos
     const favoriteCards = document.querySelectorAll(".favorite-card")
     favoriteCards.forEach((card) => {
       card.addEventListener("mouseenter", function () {
@@ -67,7 +61,6 @@ document.addEventListener("DOMContentLoaded", () => {
       })
     })
   
-    // Adicionar funcionalidade para visualizar lugares favoritos
     const viewAllButton = document.querySelector(".view-all")
     if (viewAllButton) {
       viewAllButton.addEventListener("click", (e) => {
@@ -76,7 +69,6 @@ document.addEventListener("DOMContentLoaded", () => {
       })
     }
   
-    // Animação para os itens do histórico
     const historyItems = document.querySelectorAll(".history-item")
     historyItems.forEach((item) => {
       item.addEventListener("click", function () {

@@ -136,9 +136,9 @@ body {
 }
 
 .content-section {
-  max-width: 100%; /* Changed from 1200px to 100% */
+  max-width: 100%;
   margin: 0 auto;
-  padding: 1rem; /* Reduced padding */
+  padding: 1rem;
   box-sizing: border-box;
 }
 
@@ -147,7 +147,7 @@ body {
   grid-template-columns: 1fr 1fr;
   gap: 3rem;
   align-items: center;
-  width: 100%; /* Ensure full width */
+  width: 100%;
 }
 
 .feature-list {
@@ -231,8 +231,8 @@ body {
   }
 
   .two-column {
-    grid-template-columns: 1fr; /* Force single column on mobile */
-    gap: 1.5rem; /* Reduce gap on mobile */
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
     width: 100%;
   }
 
@@ -258,7 +258,6 @@ body {
     grid-template-columns: 1fr;
   }
 
-  /* Ensure images are responsive */
   .image-content {
     margin: 0 auto;
     max-width: 100%;
